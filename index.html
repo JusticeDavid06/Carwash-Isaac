@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lavado de Autos XYZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecf2f9; /* Fondo azul claro */
+        }
+
+        header {
+            background-color: #1a237e; /* Azul oscuro */
+            color: #fff; /* Texto blanco */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #192e5b; /* Azul más oscuro */
+            text-align: center; /* Centra el menú horizontalmente */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff; /* Texto blanco enlaces del menú */
+            text-decoration: none; /* Eliminar subrayado de los enlaces */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff; /* Texto blanco */
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a237e; /* Azul oscuro */
+            color: #fff;
+        }
+
+        /* Estilo para botón Enviar del formulario */
+        input[type="submit"] {
+            background-color: #1a237e; /* Azul oscuro */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0d47a1; /* Azul más claro al pasar el mouse */
+        }
+
+        /* Estilo para la galería */
+        #galeria {
+            text-align: center;
+        }
+
+        .gallery-row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            text-align: center;
+            margin: 10px;
+            width: 200px; /* Establece el ancho deseado */
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            width: 100%; /* Establece el ancho al 100% del elemento padre (div .gallery-item) */
+            height: auto; /* Ajusta la altura de forma automática según el ancho */
+        }
+
+        .gallery-item p {
+            text-align: center;
+            color: #1a237e; /* Texto azul oscuro */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Carwash Isaac</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#faq">FAQ</a></li> <!-- Agregamos el enlace a la sección FAQ -->
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="inicio">
+            <h2>Bienvenido a nuestro Carwash</h2>
+            <p>Somos una empresa dedicada al lavado y cuidado de vehículos. Nuestro compromiso es brindarle un servicio de alta calidad para mantener su automóvil en óptimas condiciones.</p>
+        </section>
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Lavado exterior e interior</li>
+                <li>Pulido y encerado</li>
+                <li>Limpieza de tapicería</li>
+                <li>Tratamientos especiales para pintura</li>
+            </ul>
+        </section>
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="gallery-row">
+                <div class="gallery-item">
+                    <p>Auto Limpio</p>
+                    <img src="auto_limpio.jpg" alt="Auto limpio">
+                </div>
+                <div class="gallery-item">
+                    <p>Proceso de Lavado</p>
+                    <img src="limpiando.png" alt="Proceso de lavado">
+                </div>
+                <div class="gallery-item">
+                    <p>Interior Impecable</p>
+                    <img src="interior_impecable.jpg" alt="Interior impecable">
+                </div>
+            </div>
+        </section>
+        <section id="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h3>¿Cuáles son sus horarios de atención?</h3>
+                <p>Nuestro horario de atención es de lunes a viernes de 9:00 AM a 6:00 PM, y los sábados de 9:00 AM a 2:00 PM.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Aceptan pagos con tarjeta de crédito?</h3>
+                <p>Sí, aceptamos pagos con tarjeta de crédito y débito para mayor comodidad de nuestros clientes.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cuánto tiempo dura el proceso de lavado?</h3>
+                <p>El tiempo de lavado varía según el servicio que elija. Un lavado estándar suele demorar aproximadamente 30-45 minutos.</p>
+            </div>
+            
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si desea reservar un servicio o tiene alguna pregunta, no dude en ponerse en contacto con nosotros. Utilice el siguiente formulario para enviar su consulta.</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+    <footer>
+        &copy; 2023 Carwash Isaac - Todos los derechos reservados
+    </footer>
+</body>
+</html>
